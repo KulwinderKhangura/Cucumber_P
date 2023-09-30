@@ -6,14 +6,20 @@ import org.openqa.selenium.support.FindBy;
 
 public class AccountRegistrationPage extends BasePage {
 
+	
+
 	public AccountRegistrationPage(WebDriver driver) {
 		super(driver);
+		// TODO Auto-generated constructor stub
 	}
 
 	// Elements
 		@FindBy(name = "firstname")
 		WebElement txtFirstname;
 
+		
+		
+		
 		@FindBy(name = "lastname")
 		WebElement txtLasttname;
 
@@ -53,6 +59,8 @@ public class AccountRegistrationPage extends BasePage {
 			txtEmail.sendKeys(email);
 
 		}
+		
+		
 
 		public void setTelephone(String tel) {
 			txtTelephone.sendKeys(tel);
